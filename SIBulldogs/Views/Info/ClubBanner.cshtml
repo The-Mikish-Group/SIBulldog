@@ -1,0 +1,15 @@
+﻿@{
+    string docLink1 = "https://docs.google.com/document/d/e/2PACX-1vRD_aLMx0hFaww-_cYbF18nhq4g128m3rbP3yL_nrd2Ojx_MlgsLkcKSZUYTxTx62fXIJZERsvgGmH0/pub?embedded=true";
+    string docLink2 = "https://docs.google.com/document/d/1fLq4xcEXh88rTSfNAFIFd6iFvkGeDj9dvJ4diZCr9VU/edit?usp=sharing";
+}
+
+<container>
+    <div class="mx-auto text-center">
+        <iframe class="my-minutes-size container-fluid shadow bg-white px-0 mb-4" src="@docLink1" frameborder="0" scrolling="auto"></iframe>
+    </div>
+
+    <!-- Printable Copy (a "Shared" Google Doc) -->
+    <button class="btn nav-link border-1 border-white bg-black text-white text-center mx-auto rounded py-2 mb-2" onclick="newTab('@docLink2')"><h6>Club Banner Fundraiser<br />Printable Copy</h6></button>
+</container>
+
+<div class="clubbanner-view-bottom-spacing"></div>

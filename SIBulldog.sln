@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIBulldogs", "SIBulldogs\SIBulldogs.csproj", "{6FC22807-78A4-44AB-9955-C604740AF5B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FC22807-78A4-44AB-9955-C604740AF5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC22807-78A4-44AB-9955-C604740AF5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC22807-78A4-44AB-9955-C604740AF5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC22807-78A4-44AB-9955-C604740AF5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DAA3B16-A879-4E18-8B09-2240504B63CD}
+	EndGlobalSection
+EndGlobal

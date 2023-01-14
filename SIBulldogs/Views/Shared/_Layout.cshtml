@@ -1,0 +1,373 @@
+﻿@{
+    // Set Site Name (and short name)
+    string siteName = "Southern Illinois Bulldogs";
+    string siteNameShort = "Bulldogs Wrestling";
+    string siteOrganization = "Southern Illinois Bulldogs Club";
+    string siteURL = "https://SouthernIllinoisBulldogs.com/";
+
+    // Set default values
+    string PageTitle = ViewBag.Message + " - " + siteNameShort;
+    string linkShareFolder = siteURL + "content/linkshares/";
+
+    // Set version for site.css, site.js, and favicon.ico to avoid caching
+    string myVersionNumber = "v=" + DateTime.Now.Day.ToString() + "-" + DateTime.Now.Hour.ToString()/* + "-" + DateTime.Now.Minute.ToString()*/;
+
+    // Default Link Share Settings -- (shows on "Link Share" card when a link is shared)
+    string ogSite_Name = siteOrganization;
+    string ogTitle = PageTitle;
+    string ogDescription = "Dedicated to the Southern Illinois Bulldogs Wrestlers";
+    string ogURL = siteURL;
+    string canonical = siteURL;
+
+    // Default Link Share Image
+    string ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+    string ogImageWidth = "600";
+    string ogImageHeight = "315";
+
+    // 'Active Link' variables to keep track of the active link
+    string active01 = "";
+    string active02 = "";
+    string active03 = "";
+    string active04 = "";
+    string active05 = "";
+    string active06 = "";
+    string active07 = "";
+    //string active08 = "";
+    string active09 = "";
+    //string active10 = "";
+    string active11 = "";
+    string active12 = "";
+    string active13 = "";
+    //string active14 = "";
+
+    // Change Link Share card information based on the View link shared
+    switch (ViewBag.Message)
+    {
+        case "About":
+            {
+                ogTitle = siteNameShort;
+                PageTitle = siteNameShort;
+                ogURL = siteURL + "Info/About";
+                ogImageWidth = "600";
+                ogImageHeight = "315";
+                canonical = ogURL;
+                active01 = "active";
+                break;
+            }
+
+        case "Contact":
+            {
+                ogURL = siteURL + "Info/Contact";
+                ogDescription = "Contact Us";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active02 = "active";
+                break;
+            }
+
+        case "Calendar":
+            {
+                ogURL = siteURL + "Info/Calendar";
+                ogDescription = "Our Calendar";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active03 = "active";
+                break;
+            }
+        case "Fundraise":
+            {
+                ogURL = siteURL + "Info/Fundraise";
+                ogDescription = "Fundraising";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active13 = "active";
+                break;
+            }
+        case "Gallery":
+            {
+                ogURL = siteURL + "Gallery/Gallery";
+                ogDescription = "Our Gallery";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active04 = "active";
+                break;
+            }
+
+        case "Privacy":
+            {
+                ogURL = siteURL + "Info/Privacy";
+                ogDescription = "Privacy Policy";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active05 = "active";
+                break;
+            }
+
+        case "TOS":
+            {
+                ogURL = siteURL + "Info/TOS";
+                ogDescription = "Terms of Service";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active06 = "active";
+                break;
+            }
+        case "Bilaws":
+            {
+                ogURL = siteURL + "Info/Bilaws";
+                ogDescription = "Bilaws";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active07 = "active";
+                break;
+            }
+        case "Store":
+            {
+                ogURL = siteURL + "Merchandise/Store";
+                ogDescription = "Merchandise Stores";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active09 = "active";
+                break;
+            }
+        case "Minutes":
+            {
+                ogURL = siteURL + "Info/Minutes";
+                ogDescription = "Meeting Minutes";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active11 = "active";
+                break;
+            }
+        case "ClubInfo":
+            {
+                ogURL = siteURL + "Info/ClubInfo";
+                ogDescription = "Club Info";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active12 = "active";
+                break;
+            }
+        case "TrackWrestling":
+            {
+                ogURL = siteURL + "Info/TrackWrestling";
+                ogDescription = "TrackWrestling Instructions";
+                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+                canonical = ogURL;
+                active07 = "active";
+                break;
+            }
+
+            //case "Flier":
+            //    {
+            //        ogURL = siteURL + "Info/Flier";
+            //        ogDescription = "Bulldogs Flier";
+            //        ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
+            //        canonical = ogURL;
+            //        active10 = "active";
+            //        break;
+            //    }           
+
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Site Name -->
+    <title>@PageTitle</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FavIcon(s) - (all your Logo... plenty of them!) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/content/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" type="image/pgn" href="~/content/icons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="~/content/icons/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="~/content/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="~/content/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+
+    <!-- Fonts (Lato - add more fonts here) -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300, 400, 500, 600' rel='stylesheet' type='text/css'>
+
+    <!-- Default FB App ID unused -->
+    <meta property="fb:app_id" content="966242223397117" />
+
+    <!-- Link Share Setup -->
+    <!-- This info is used for the card shown when you share a link on the web (I call it "Link Share"). -->
+    <!-- (more info here: https://ogp.me/) -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="@ogTitle" />
+    <meta property="og:determiner" content="The" />
+    <meta property="og:description" content="@ogDescription" />
+    <meta property="og:site_name" content="@ogSite_Name" />
+    <meta property="og:url" content="@ogURL" />
+    <meta property="og:image:url" content="@ogImage" />
+    <meta property="og:image:alt" content="Logo Image" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content=@ogImageWidth />
+    <meta property="og:image:height" content=@ogImageHeight />
+
+    <!-- Twitter Link Share Setup -->
+    <!-- (more info here: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) -->
+
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:title" content="@ogTitle" />
+    <meta name="twitter:image" content="@ogImage" />
+    <meta name="twitter:image:width" content=@ogImageWidth />
+    <meta name="twitter:image:height" content=@ogImageHeight />
+
+    <!-- Website Setup -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="@ogDescription" />
+
+    <link rel="canonical" href="@canonical" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js"></script>
+</head>
+
+<body>
+
+    <!-- Top Header Navbar Menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom box-shadow px-0 mb-0 mb-lg-4 my-0">
+            <div class="d-flex flex-grow-1">
+
+                <!-- Set to show on lg -->
+                <a class="navbar-brand navbar-text text-white d-none d-lg-inline-block" href="~/Info/About"><img class="bd-head-size px-2 pb-2" src="~/Content/Svg/BD-Heads/BD-Head-Master.svg" alt="Bulldog Head Image Image">@siteName</a>
+
+                <!-- Set to show on sm -->
+                <a class="navbar-brand navbar-text text-white d-lg-none d-inline-block w-100 text-center me-0 ps-5" href="~/Info/About">@siteNameShort<img class="bd-head-size px-2 pb-2" src="~/Content/Svg/BD-Heads/BD-Head-Master.svg" alt="Bird Image"></a>
+
+                <!-- Toggle Button -->
+                <div class="text-left pe-2 pt-1">
+                    <button class="navbar-toggler pe-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Selection Choices -->
+            <div class="collapse navbar-collapse flex-grow-1 text-right px-2" id="navbarToggler">
+                <ul class=" ps-4 navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a class="@active01 nav-link nav-link-font-size" aria-current="page" href="~/Info/About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="@active02 nav-link nav-link-font-size" href="~/Info/Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="@active03 nav-link nav-link-font-size" href="~/Info/Calendar">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="@active13 nav-link nav-link-font-size" href="~/Info/Fundraise">Fundraising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="@active09 nav-link nav-link-font-size" href="~/Merchandise/Store">Merchandise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="@active04 nav-link nav-link-font-size" href="~/Gallery/Gallery">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content (Views) -->
+    <div id="MainContainer" class="container p-0">
+        <main role="main" class="p-0">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Bottom Footer Navbar Menu -->
+    <footer class="navbar navbar-dark border-top bg-black" role="contentinfo" aria-label="Site footer">
+
+        <div class="container text-right">
+
+            <!-- Bottom Footer Row -->
+            <div class="row w-100 gx-0 gx-lg-5">
+
+                <!-- Bottom Footer Column - Info -->
+                <div class="col-4">
+                    <h6 class="navbar-text text-white mb-0">Info</h6>
+                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
+                        <li class="nav-item text-light">
+                            <a class="@active01 nav-link text-nowrap" href="~/Info/About">About Us</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a class="@active02 nav-link text-nowrap" href="~/Info/Contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a class="@active05 nav-link" style="font-size: 12px;" href="~/Info/Privacy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a class="@active06 nav-link" style="font-size: 12px;" href="~/Info/TOS">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bottom Footer Column - Features -->
+                <div class="col-4">
+                    <h6 class="navbar-text text-white mb-0">Features</h6>
+                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
+                        <li class="nav-item text-light">
+                            <a class="@active03 nav-link" style="font-size: 12px;" href="~/Info/Calendar" target="_blank">Calendar</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a class="@active13 nav-link" style="font-size: 12px;" href="~/Info/Fundraise" target="_blank">Fundraise</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a class="@active09 nav-link" style="font-size: 12px;" href="~/Merchandise/Store">Merchandise</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a class="@active04 nav-link" style="font-size: 12px;" href="~/Gallery/Gallery">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bottom Footer Column - More -->
+                <div class="col-4 pe-0">
+                    <h6 class="navbar-text text-white mb-0">More</h6>
+                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
+                        <li class="nav-item text-light">
+                            <a class="@active07 nav-link" style="font-size: 12px;" href="~/Info/Bilaws">Bilaws</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a class="@active12 nav-link text-nowrap" href="~/Info/ClubInfo">Club Info</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a class="@active11 nav-link" style="font-size: 12px;" href="~/Info/Minutes">Club Minutes</a>
+                        </li>
+                        @*<li class="nav-item text-light">
+                            <a class="@active14 nav-link" style="font-size: 12px;" href="~/Info/ClubBanner">Banner Fundraiser</a>
+                        </li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="w-100 bg-gray text-white">
+            <h6 class="text-center py-2" style="font-size: 10px;">Copyright © @DateTime.Now.Year All Rights Reserved.</h6>
+        </div>
+
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

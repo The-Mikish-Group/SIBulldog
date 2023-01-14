@@ -1,0 +1,134 @@
+﻿@{
+    //string siteName = "Southern Illinois Bulldogs";
+    string siteGoogleMapURL = "https://www.google.com/maps/place/1107+S+Main+St,+Red+Bud,+IL+62278/@38.201692,-89.9953916,536m/data=!3m1!1e3!4m5!3m4!1s0x88762764bbdbc3e5:0xebb720ff8b455ab2!8m2!3d38.2014852!4d-89.994499";
+    string siteGoogleReviewURL = "https://g.page/r/CSHdLhadqJqPEBI/review";
+    string siteFacebookPageURL = "https://www.facebook.com/jessischloemann/";
+    string siteCoach = "Butch Schloemann";
+    //string siteName = "Southern Illinois Bulldogs<br/>Wrestling Club";
+    //string siteEmailContact = "SouthernIllinois<br/>Bulldogs@Gmail.com";
+    string address1 = "1107 S. Main St.";
+    string address2 = "Red Bud, Illinois 62278";
+    string phone1 = "314-712-3403";
+}
+
+<div class="text-center py-4 py-lg-0 px-4 px-lg-0">
+
+    <!-- Please Contact us Text -->
+    <div class="my-card-header mx-auto bg-black text-white shadow-lg" style="max-width: 24rem;">
+        <h3 class="font-weight-bold py-4"><img class="bd-head-size pe-2 pb-1" src="/content/svg/bd-heads/bd-head-right.svg">Contact Us</h3>
+    </div>
+
+    <!-- Contact Info box -->
+    <div class="my-card-footer border border-dark border-1 shadow-lg mx-auto bg-light-gray mt-0 mb-3 pb-2" style="max-width: 24rem;">
+        
+        <!-- BD- Logo -->
+        <div class="bd-banner-logo-size ratio auto-margin px-4 pt-0 pb-2 bg-white">
+            <img style="border-bottom: solid; border-bottom-color:black; max-width: 24rem;" src="~/Content/Svg/BD-Banner-Logos/BD-Logo-Master-BlackWhite-1200x936-Plain.svg" alt="Bulldog logo">
+        </div>
+
+        <div class="bg-light-gray">
+
+            <!-- Column - Contacts -->
+            <div class="col-12 lh-sm">
+                
+                <!-- Club Name -->
+                <h5 class="card-title text-white text-center fw-bolder pt-3 pb-0">Southern Illinois Bulldogs<br />Wrestling Club</h5>
+
+                <!-- Address Info -->
+                <div class="text-center mx-auto">
+
+                    <!-- Address -->
+                    <table class="table-sm table-borderless mx-auto pt-2">
+                        <tbody>
+                            <tr>
+                                <td class="text-black text-start ps-3">
+                                    <p class="fw-bold text-nowrap mb-0">@address1</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-black text-start ps-3">
+                                    <p class="fw-bold text-nowrap mb-0">@address2</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-black text-start ps-3">
+                                    <p class="fw-bold text-nowrap mb-0">@phone1</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Email Adddress -->
+                    <table class="table-sm table-borderless mx-auto">
+                        <tbody>
+                            <tr>
+                                <td class="text-black text-start ps-3">
+                                    <p class="fw-bold text-nowrap mb-0">
+                                    <p class="text-center mb-0">
+                                        <h6 class="text-center"><a class="text-dark fw-bold" href="mailto: SouthernIllinoisBulldogs@gmail.com">SouthernIllinoisBulldogs<br />@@gmail.com</a></h6>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Coach -->
+                    <table class="table-sm table-borderless mx-auto pt-2 pb-4">
+                        <tbody>
+                            <tr>
+                                <td class="text-white text-start ps-0">
+                                    <h5 class="fw-bold text-nowrap mb-0">Head Coach</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-black text-start ps-0">
+                                    <h5 class="fw-bold text-nowrap mb-0">@siteCoach</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Buttons -->
+                <div class="py-3">
+
+                    <!-- Facebook Page Button -->
+                    <div class="py-1">
+                        <button style="border: none; background-color: transparent; width: 200px; border-radius: 8px; padding-left: 20px; text-align: left;" onclick="newTab('@siteFacebookPageURL')">
+                            <img style="height: 32px; width: 32px;" src="/content/svg/buttons/FB-Square.svg" />  <b>Facebook Page</b>
+                        </button>
+                    </div>
+
+                    <!-- Google Page Button -->
+                    <div class="py-1">
+                        <button style="border: none; background-color: transparent; width: 200px; border-radius: 8px; padding-left: 20px; text-align: left;" onclick="newTab('@siteGoogleMapURL')">
+                            <img style="height:32px; width:32px;" src="/Content/Svg/Buttons/Google-Square.svg" />  <b>Google Maps</b>
+                        </button>
+                    </div>
+                    <div class="py-1">
+                        <button style="border:solid thin; background-color: white; color: black; width: 200px; border-radius: 8px; padding-left: 20px; text-align: left;" onclick="newTab('@siteGoogleReviewURL')">
+                             <b>Review us on Google</b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Padding -->
+<div class="contact-view-bottom-spacing"></div>
+
+<!-- Website Development -->
+<div class="mx-auto text-dark mb-3" style="max-width:400px;">
+    <h6 class="text-center mb-0 fw-normal">Website Development</h6>
+    <table class="table-sm table-borderless mx-auto pt-2 pb-3">
+        <tbody>          
+            <tr>
+                <td class="text-black text-center">
+                    <p class="mb-0"><a class="text-dark fw-normal" style="font-size: 14px;" href="mailto: mikish.vaughn@gmail.com">mikish.vaughn@gmail.com</a></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>   
+</div>
