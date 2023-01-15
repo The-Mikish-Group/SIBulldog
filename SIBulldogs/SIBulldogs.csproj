@@ -25,4 +25,52 @@
     <Compile Remove="Controllers\HomeController.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x630.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x630.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x936.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x936.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-5184x4037.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-5184x4037.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-600x315.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-600x315.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-600x600.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-600x600.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-1200x630.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-1200x630.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-1200x934.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-1200x934.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-1200x936-Plain.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-1200x936-Plain.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-5184x4037.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-5184x4037.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-600x315.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-600x315.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-600x600.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-BlackWhite-600x600.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-1200x630.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-1200x630.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-1200x936.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-1200x936.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-5184x4037.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-5184x4037.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-600x315.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-600x315.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-600x600.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-White-600x600.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Rudis-A-2400x1080.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Rudis-A-2400x1080.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Rudis-B-2400x1080.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Rudis-B-2400x1080.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Rudis-C-2400x1080.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Rudis-C-2400x1080.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Rudis-D-2400x1080.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Rudis-D-2400x1080.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Tot-Bash-3600x2400-01.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Tot-Bash-3600x2400.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Tot-Bash-3600x2400.png" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Tot-Bash-Black-3600x2400.ai" />
+    <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Tot-Bash-Black-3600x2400.png" />
+  </ItemGroup>
+
 </Project>
