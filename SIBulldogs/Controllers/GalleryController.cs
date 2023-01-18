@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SIBulldogs.Models;
+using System.Diagnostics;
+
 namespace SIBulldogs.Controllers;
 
 public class GalleryController : Controller {
@@ -65,5 +68,11 @@ public class GalleryController : Controller {
     {
         ViewBag.Message = "WebArtZIP";            
         return View();
+    }
+
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult Error()
+    {
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }

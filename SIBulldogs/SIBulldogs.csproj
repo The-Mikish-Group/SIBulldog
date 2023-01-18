@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+	  <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -26,6 +27,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Gallery\Videos01.cshtml" />
+    <Content Remove="Views\Gallery\Videos02.cshtml" />
+    <Content Remove="Views\Gallery\Videos03.cshtml" />
+    <Content Remove="Views\Info\About.cshtml" />
+    <Content Remove="wwwroot\content\Gallery\Flyers\BrawlOld.jpg" />
+    <Content Remove="wwwroot\content\Gallery\Flyers\Camp.jpg" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x630.ai" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x630.png" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x936.ai" />
@@ -71,6 +78,17 @@
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Tot-Bash-3600x2400.png" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Tot-Bash-Black-3600x2400.ai" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Tot-Bash-Black-3600x2400.png" />
+    <Content Remove="wwwroot\css\site_Old.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="web.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\content\Gallery\Flyers\" />
   </ItemGroup>
 
 </Project>

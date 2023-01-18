@@ -10,14 +10,14 @@ public class InfoController : Controller   {
     public IActionResult Index()
     {
         ViewBag.Message = "About";
-        return View("About");
+        return View();
     }
 
     // Our Views
     public IActionResult About()
     {
         ViewBag.Message = "About";            
-        return View();
+        return View("Index");
     }
     public IActionResult Contact()
     {
@@ -74,6 +74,12 @@ public class InfoController : Controller   {
     //    ViewBag.Message = "ClubBanner";
     //    return View();
     //}
+
+    public IActionResult Test()
+    {
+        ViewBag.Message = "Test";
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
