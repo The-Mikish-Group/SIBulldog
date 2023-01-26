@@ -47,7 +47,18 @@
             {
                 ogTitle = siteNameShort;
                 PageTitle = siteNameShort;
-                ogURL = siteURL + "Info/About";
+                ogURL = siteURL + "/";
+                ogImageWidth = "600";
+                ogImageHeight = "315";
+                canonical = ogURL;
+                active01 = "active";
+                break;
+            }
+        case "Home":
+            {
+                ogTitle = siteNameShort;
+                PageTitle = siteNameShort;
+                ogURL = siteURL + "/";
                 ogImageWidth = "600";
                 ogImageHeight = "315";
                 canonical = ogURL;
@@ -232,12 +243,12 @@
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="~/css/colors.css" />
-    <link rel="stylesheet" href="~/css/fontsize.css" />
-    <link rel="stylesheet" href="~/css/mycards.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/sizes.css" />
-    <link rel="stylesheet" href="~/css/spacing.css" />
+    <link rel="stylesheet" href="~/css/colors.css?v01" />
+    <link rel="stylesheet" href="~/css/fontsize.css?v01" />
+    <link rel="stylesheet" href="~/css/mycards.css?v01" />
+    <link rel="stylesheet" href="~/css/site.css?v01" />
+    <link rel="stylesheet" href="~/css/sizes.css?v01" />
+    <link rel="stylesheet" href="~/css/spacing.css?v01" />
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -270,7 +281,7 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right px-2" id="navbarToggler">
                 <ul class=" ps-4 navbar-nav ms-auto flex-nowrap">
                     <li class="nav-item">
-                        <a class="@active01 nav-link nav-link-font-size" aria-current="page" href="~/Info/About">About</a>
+                        <a class="@active01 nav-link nav-link-font-size" aria-current="page" href="/">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="@active02 nav-link nav-link-font-size" href="~/Info/Contact">Contact</a>
@@ -312,7 +323,7 @@
                     <h6 class="navbar-text text-white mb-0">Info</h6>
                     <ul class="navbar-nav ms-auto flex-nowrap ps-2">
                         <li class="nav-item text-light">
-                            <a class="@active01 nav-link text-nowrap" href="~/Info/About">About Us</a>
+                            <a class="@active01 nav-link text-nowrap" href="/">About Us</a>
                         </li>
                         <li class="nav-item text-light">
                             <a class="@active02 nav-link text-nowrap" href="~/Info/Contact">Contact Us</a>

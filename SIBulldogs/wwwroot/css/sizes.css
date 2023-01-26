@@ -85,43 +85,34 @@
 /* #endregion */
 
 /* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Smaller tablets */
-@media (min-width: 575px) and (max-width: 768px) {    
+@media (min-width: 575px) and (max-width: 768px) {
 
     /* #region Sizes */
-    .ap-logo-size {
-        height: 400px;
-    } 
-    .love-lead-size {
-        width: 400px;
-    }    
-    /* #endregion */   
+    .bd-logo-size {
+        height: 500px;
+    }
+    /* #endregion */    
 }
 /* #endregion  */
 
 /* #region (BS -md- ) (min-width: 768.01px) and (max-width: 991px) Large tablet styles */
-@media (min-width: 768.01px) and (max-width: 991px) {   
+@media (min-width: 768.01px) and (max-width: 991px) {
 
     /* #region Sizes */
-    .ap-logo-size {
-        height: 428px;
+    .bd-logo-size {
+        height: 500px;
     }
-    .love-lead-size {
-        width: 478px;
-    }
-    /* #endregion */
+    /* #endregion */  
 }
 /* #endregion */
 
 /* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
-@media (min-width: 992px) {    
+@media (min-width: 992px) {
 
     /* #region Sizes */
-    .ap-logo-size {
-        height: 428px;
-    }
-    .love-lead-size {
-        width: 500px;
-    }
+    .bd-logo-size {
+        height: 210px;
+    }    
     /* #endregion */    
 }
 /* #endregion*/
@@ -130,8 +121,8 @@
 @media (min-width: 1200px) {
 
     /* #region Sizes */
-    .love-lead-size {
-        width: 500px;
+    .bd-logo-size {
+        height: 302px;
     }
     /* #endregion */
 }
@@ -141,8 +132,8 @@
 @media (min-width: 1399.98px) {
 
     /* #region Sizes */
-    .love-lead-size {
-        width: 500px;
+    .bd-logo-size {
+        height: 409px;
     }
     /* #endregion */
 }

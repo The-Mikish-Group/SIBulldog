@@ -4,9 +4,9 @@
 	 viewBox="0 0 64.1 64.7" style="enable-background:new 0 0 64.1 64.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;fill:#C100D0;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
-	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
-	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:#000000;stroke:#000000;stroke-miterlimit:10;}
 </style>
 <g id="Fundraising">
 	<rect class="st0" width="64" height="64.6"/>

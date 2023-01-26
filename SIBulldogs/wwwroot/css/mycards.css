@@ -53,8 +53,10 @@
 /* #endregion */
 
 /* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Smaller tablets */
-@media (min-width: 575px) and (max-width: 768px) {    
-    
+@media (min-width: 575px) and (max-width: 768px) {
+    .my-rounded {
+        border-radius: 0;
+    }
 }
 /* #endregion  */
 
@@ -79,6 +81,10 @@
     .my-card-radius {
         border-radius: 6px;
         border-width: 1px;
+    }
+
+    .my-rounded {
+        border-radius: 6px;
     }
     /* #endregion */    
 }
