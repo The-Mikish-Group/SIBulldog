@@ -70,6 +70,41 @@
     <div class="row gx-1 gx-lg-1">
 
         @{
+            filename = "BD-Shirt-Paw-Front-Dark-Master";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-black";
+            txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+            filename = "BD-Shirt-Paw-Front-Light-Master";
+            fileImage = filename + extension;
+            sizeText = size600x600Text;
+            bgColor = "bg-white";
+            txtColor = "text-black";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+
+        @{
             filename = "BD-Shirt-Front";
             fileImage = filename + extension;
             sizeText = size600x600Text;

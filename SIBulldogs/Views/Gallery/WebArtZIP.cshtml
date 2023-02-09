@@ -67,6 +67,30 @@
     <div class="row gx-1 gx-lg-1" id="imagelist">
 
         @{
+            filename = "BD-Shirt-Paw-Front-Dark-Master";
+            fileImage = filename + ".svg";
+            bgColor = "bg-black";
+            textColor = "text-white";
+        }
+        <div class="col-12 col-lg-4 py-1">
+            <a class="nav-link @bgColor text-center @textColor mx-auto py-2 rounded" onclick="downloadFile('@filename')" style="width: 280px;" href="#">
+                <img class="ratio gallery-picture-size" src="@downloadFolderLocation@fileImage" /><h6>Download<br />@filename@extension</h6>
+            </a>
+        </div>
+
+        @{
+            filename = "BD-Shirt-Paw-Front-Light-Master";
+            fileImage = filename + ".svg";
+            bgColor = "bg-white";
+            textColor = "text-black";
+        }
+        <div class="col-12 col-lg-4 py-1">
+            <a class="nav-link @bgColor text-center @textColor mx-auto py-2 rounded" onclick="downloadFile('@filename')" style="width: 280px;" href="#">
+                <img class="ratio gallery-picture-size" src="@downloadFolderLocation@fileImage" /><h6>Download<br />@filename@extension</h6>
+            </a>
+        </div>
+
+        @{
             filename = "BD-Shirt-Front";
             fileImage = filename + ".svg";
             bgColor = "bg-black";

@@ -318,7 +318,7 @@ a {
 /* Responsive Button Primary colors */
 .btn-primary {
     color: white;
-    background-color: #000000; 
+    background-color: darkgray; 
     border-color: #414042; /* gray-darker */
 }
 

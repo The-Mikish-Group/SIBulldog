@@ -33,6 +33,9 @@
     <Content Remove="Views\Info\About.cshtml" />
     <Content Remove="wwwroot\content\Gallery\Flyers\BrawlOld.jpg" />
     <Content Remove="wwwroot\content\Gallery\Flyers\Camp.jpg" />
+    <Content Remove="wwwroot\content\Gallery\Flyers\GolfFlier.ai" />
+    <Content Remove="wwwroot\content\Gallery\WebArt\BD-Shirt-Paw-Front-Dark-Master.ai" />
+    <Content Remove="wwwroot\content\Gallery\WebArt\BD-Shirt-Paw-Front-Light-Master.ai" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x630.ai" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x630.png" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x936.ai" />
