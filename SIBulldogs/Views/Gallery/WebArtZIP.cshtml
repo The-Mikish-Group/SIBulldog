@@ -410,25 +410,28 @@
 <!-- Add the "Top" Button to view so we can get back to the top of the page. -->
 <script>
 
-    //Get the button
-    var mybutton = document.getElementById("my-button");
+// Get the button element
+const myButton = document.getElementById("my-button");
 
-    // When the user scrolls down 20px from the top of the document, show the button.
-    window.onscroll = function () { scrollFunction() };
+// Function to show or hide the button
+const toggleButton = () => {
+  if (window.pageYOffset > 20) {
+    myButton.style.display = "block";
+  } else {
+    myButton.style.display = "none";
+  }
+};
 
-    // Do we display button or not?
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
+// Scroll event listener that calls the toggleButton function
+window.addEventListener("scroll", toggleButton);
 
-    // When the user clicks on the button, scroll to the top of the document.
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+// Function to scroll to the top of the page
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
+// Click event listener for the button that calls the scrollToTop function
+myButton.addEventListener("click", scrollToTop);
+
 
 </script>

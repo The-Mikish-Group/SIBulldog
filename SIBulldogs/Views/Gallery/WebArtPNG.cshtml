@@ -1,6 +1,6 @@
 ﻿@{
     // What Type of Files?
-    string extension = ".png";   
+    string extension = ".png";
     string folderLocation = "../Content/Gallery/WebArt/";
     string filename = "";
     string fileImage = "";
@@ -8,7 +8,7 @@
     string bgColor = "";
     string txtColor = "";
     string sizeText = "";
-    string size600x600Text = "Square - Document size";
+    string size600x600Text = "Square Size";
     string size1200x936Text = "Small - Print Shop Size";
     string size600x315Text = "Link-Share Card Size";
     string size1200x630Text = "Facebook Page Background Size";
@@ -28,7 +28,7 @@
             <img class="card-image-size" src="~/Content/Svg/Cards/WebArt.svg" />
             <span class="text-black">WebArt:</span><span class="text-light fs-4"> Png</span>
         </h3>
-        <h5 class="text-center text-light">Images used by us Bulldogs!<br/>(Click to Expand)</h5>
+        <h5 class="text-center text-light">Images used by us Bulldogs!<br />(Click to Expand)</h5>
     </div>
 
     <!-- Button Row-->
@@ -67,7 +67,7 @@
     </div>
 
     <!-- Image List -->
-    <div class="row gx-1 gx-lg-1"> 
+    <div class="row gx-1 gx-lg-1">
 
         @{
             filename = "BD-Shirt-Paw-Front-Black-Master";
@@ -76,6 +76,7 @@
             bgColor = "bg-blue-lighter";
             txtColor = "text-black";
         }
+
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
                 <p class="pt-2 @txtColor fw-bold">@filename</p>
@@ -84,50 +85,29 @@
                     <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
                 </a>
             </div>
-        </div>
-
-        @{
-            filename = "BD-Shirt-Paw-Front-Dark-Master";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
+        </div> for (int i = 0; i < sizeText; i++) {
+        char characterAtIndexPosition = filename.charAt(i);
+        if (characterAtIndexPosition == ' ') {
+        System.out.println("There was a bug!");
         }
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>
-        </div>
-
-        @{
-            filename = "BD-Shirt-Paw-Front-Light-Master";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
         }
 
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>
-        </div>
 
+        //This code is incorrect because the comparator operator must be double equals ('=='). The single equal sign is used to assign a value to a variable and will not compare two values correctly. The correct code should read:
+
+        for (int i = 0; i < sizeText; i++) {
+        char characterAtIndexPosition = filename.charAt(i);
+        if (characterAtIndexPosition == ' ') {
+        System.out.println("There was a bug!");
+        }
+        }
 
         @{
-            filename = "BD-Shirt-Front";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
+        filename = "BD-Shirt-Paw-Front-Dark-Master";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -140,11 +120,30 @@
         </div>
 
         @{
-            filename = "BD-Shirt-Back-DIDI-Dual";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
+        filename = "BD-Shirt-Paw-Front-Light-Master";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
+        }
+
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+
+        @{
+        filename = "BD-Shirt-Front";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -157,11 +156,11 @@
         </div>
 
         @{
-            filename = "BD-Shirt-Back-IKWF-Dual";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
+        filename = "BD-Shirt-Back-DIDI-Dual";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -174,79 +173,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Master-Black-600x600";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
-        }       
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>            
-        </div>    
-
-        @{
-            filename = "BD-Logo-Master-Black-1200x936";
-            fileImage = filename + extension;
-            sizeText = size1200x936Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
-        }       
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>            
-        </div>   
-
-        @{
-            filename = "BD-Logo-Master-Black-600x315";
-            fileImage = filename + extension;
-            sizeText = size600x315Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
-        }       
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>            
-        </div>   
-        
-        @{
-            filename = "BD-Logo-Master-Black-1200x630";
-            fileImage = filename + extension;
-            sizeText = size1200x630Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
-        }       
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>            
-        </div>   
-
-        @{
-            filename = "BD-Logo-Master-Black-5184x4037";
-            fileImage = filename + extension;
-            sizeText = size5184x4037Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
+        filename = "BD-Shirt-Back-IKWF-Dual";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -259,28 +190,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Master-BlackWhite-600x600";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
-        }       
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>            
-        </div>   
-
-        @{
-            filename = "BD-Logo-Master-BlackWhite-1200x936";
-            fileImage = filename + extension;
-            sizeText = size1200x936Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
+        filename = "BD-Logo-Master-Black-600x600";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -293,11 +207,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Master-BlackWhite-1200x936-Plain";
-            fileImage = filename + extension;
-            sizeText = size1200x936Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
+        filename = "BD-Logo-Master-Black-1200x936";
+        fileImage = filename + extension;
+        sizeText = size1200x936Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -310,11 +224,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Master-BlackWhite-600x315";
-            fileImage = filename + extension;
-            sizeText = size600x315Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
+        filename = "BD-Logo-Master-Black-600x315";
+        fileImage = filename + extension;
+        sizeText = size600x315Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -327,11 +241,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Master-BlackWhite-1200x630";
-            fileImage = filename + extension;
-            sizeText = size1200x630Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
+        filename = "BD-Logo-Master-Black-1200x630";
+        fileImage = filename + extension;
+        sizeText = size1200x630Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -344,11 +258,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Master-BlackWhite-5184x4037";
-            fileImage = filename + extension;
-            sizeText = size5184x4037Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
+        filename = "BD-Logo-Master-Black-5184x4037";
+        fileImage = filename + extension;
+        sizeText = size5184x4037Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -361,28 +275,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Master-White-600x600";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
-        }
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>            
-        </div>  
-
-        @{
-            filename = "BD-Logo-Master-White-1200x936";
-            fileImage = filename + extension;
-            sizeText = size1200x936Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
+        filename = "BD-Logo-Master-BlackWhite-600x600";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -395,45 +292,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Master-White-600x315";
-            fileImage = filename + extension;
-            sizeText = size600x315Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
-        }
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>            
-        </div>  
-
-        @{
-            filename = "BD-Logo-Master-White-1200x630";
-            fileImage = filename + extension;
-            sizeText = size1200x630Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
-        }
-        <div class="col-12 col-lg-3">
-            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
-                <p class="pt-2 @txtColor fw-bold">@filename</p>
-                <p class="@txtColor">@sizeText</p>
-                <a href="@folderLocation@fileImage" target="_blank">
-                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
-                </a>
-            </div>            
-        </div>  
-
-        @{
-            filename = "BD-Logo-Master-White-5184x4037";
-            fileImage = filename + extension;
-            sizeText = size5184x4037Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
+        filename = "BD-Logo-Master-BlackWhite-1200x936";
+        fileImage = filename + extension;
+        sizeText = size1200x936Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -446,11 +309,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Rudis-A-2400x1080";
-            fileImage = filename + extension;
-            sizeText = size2400x1080Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
+        filename = "BD-Logo-Master-BlackWhite-1200x936-Plain";
+        fileImage = filename + extension;
+        sizeText = size1200x936Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -463,11 +326,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Rudis-B-2400x1080";
-            fileImage = filename + extension;
-            sizeText = size2400x1080Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
+        filename = "BD-Logo-Master-BlackWhite-600x315";
+        fileImage = filename + extension;
+        sizeText = size600x315Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -480,11 +343,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Rudis-C-2400x1080";
-            fileImage = filename + extension;
-            sizeText = size2400x1080Text;
-            bgColor = "bg-black";
-            txtColor = "text-white";
+        filename = "BD-Logo-Master-BlackWhite-1200x630";
+        fileImage = filename + extension;
+        sizeText = size1200x630Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -497,11 +360,11 @@
         </div>
 
         @{
-            filename = "BD-Logo-Rudis-D-2400x1080";
-            fileImage = filename + extension;
-            sizeText = size2400x1080Text;
-            bgColor = "bg-dark-gray";
-            txtColor = "text-white";
+        filename = "BD-Logo-Master-BlackWhite-5184x4037";
+        fileImage = filename + extension;
+        sizeText = size5184x4037Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -514,11 +377,11 @@
         </div>
 
         @{
-            filename = "BD-Head-Master";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-dark-gray";
-            txtColor = "text-white";
+        filename = "BD-Logo-Master-White-600x600";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -531,11 +394,11 @@
         </div>
 
         @{
-            filename = "BD-Head-Right";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-dark-gray";
-            txtColor = "text-white";
+        filename = "BD-Logo-Master-White-1200x936";
+        fileImage = filename + extension;
+        sizeText = size1200x936Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -548,11 +411,11 @@
         </div>
 
         @{
-            filename = "BD-Head-Right-Smile";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-dark-gray";
-            txtColor = "text-white";
+        filename = "BD-Logo-Master-White-600x315";
+        fileImage = filename + extension;
+        sizeText = size600x315Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -565,11 +428,11 @@
         </div>
 
         @{
-            filename = "BD-Head-Rudis";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-dark-gray";
-            txtColor = "text-white";
+        filename = "BD-Logo-Master-White-1200x630";
+        fileImage = filename + extension;
+        sizeText = size1200x630Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -579,14 +442,167 @@
                     <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
                 </a>
             </div>
-        </div> 
+        </div>
 
         @{
-            filename = "BD-Tot-Bash-Black-3600x2400";
-            fileImage = filename + extension;
-            sizeText = size600x600Text;
-            bgColor = "bg-white";
-            txtColor = "text-black";
+        filename = "BD-Logo-Master-White-5184x4037";
+        fileImage = filename + extension;
+        sizeText = size5184x4037Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Logo-Rudis-A-2400x1080";
+        fileImage = filename + extension;
+        sizeText = size2400x1080Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Logo-Rudis-B-2400x1080";
+        fileImage = filename + extension;
+        sizeText = size2400x1080Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Logo-Rudis-C-2400x1080";
+        fileImage = filename + extension;
+        sizeText = size2400x1080Text;
+        bgColor = "bg-black";
+        txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Logo-Rudis-D-2400x1080";
+        fileImage = filename + extension;
+        sizeText = size2400x1080Text;
+        bgColor = "bg-dark-gray";
+        txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Head-Master";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-dark-gray";
+        txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Head-Right";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-dark-gray";
+        txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Head-Right-Smile";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-dark-gray";
+        txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Head-Rudis";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-dark-gray";
+        txtColor = "text-white";
+        }
+        <div class="col-12 col-lg-3">
+            <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
+                <p class="pt-2 @txtColor fw-bold">@filename</p>
+                <p class="@txtColor">@sizeText</p>
+                <a href="@folderLocation@fileImage" target="_blank">
+                    <img class="gallery-picture-size img-fluid py-3 px-1" src="@folderLocation@fileImage" alt="@filename">
+                </a>
+            </div>
+        </div>
+
+        @{
+        filename = "BD-Tot-Bash-Black-3600x2400";
+        fileImage = filename + extension;
+        sizeText = size600x600Text;
+        bgColor = "bg-white";
+        txtColor = "text-black";
         }
         <div class="col-12 col-lg-3">
             <div class="m-2 gallery-picture-box-size m-2 text-center @bgColor rounded border border-white">
@@ -598,7 +614,7 @@
             </div>
         </div>
     </div>
-  
+
 </div>
 
 <!-- Add the "Top" Button to View so we can get back to the top of the page. -->
