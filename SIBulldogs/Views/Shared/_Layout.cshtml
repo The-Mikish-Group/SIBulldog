@@ -1,28 +1,26 @@
 ﻿@{
-    // Set Site Name (and short name)
+    // This Site
+    string siteURL ="https://SouthernIllinoisBulldogs.com/";
+
+    // Set Site Name
     string siteName = "Southern Illinois Bulldogs";
+
+    // Short name appears in Nav Bar at top on Phones... Can be longer like "Avon Park Nazarene" or "Avon Park Naz"
     string siteNameShort = "Bulldogs Wrestling";
+
+    // Overall Organization
     string siteOrganization = "Southern Illinois Bulldogs Club";
-    string siteURL = "https://SouthernIllinoisBulldogs.com/";
 
     // Set default values
-    string PageTitle = ViewBag.Message + " - " + siteNameShort;
-    string linkShareFolder = siteURL + "content/linkshares/";
+    string pageTitle = ViewBag.Message + " - " + siteNameShort;
+    string description = "Dedicated to the Southern Illinois Bulldogs Wrestlers";
+    string folder = "";
 
-    // Set version for site.css, site.js, and favicon.ico to avoid caching
-    string myVersionNumber = "v=" + DateTime.Now.Day.ToString() + "-" + DateTime.Now.Hour.ToString()/* + "-" + DateTime.Now.Minute.ToString()*/;
-
-    // Default Link Share Settings -- (shows on "Link Share" card when a link is shared)
-    string ogSite_Name = siteOrganization;
-    string ogTitle = PageTitle;
-    string ogDescription = "Dedicated to the Southern Illinois Bulldogs Wrestlers";
-    string ogURL = siteURL;
-    string canonical = siteURL;
-
-    // Default Link Share Image
-    string ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-    string ogImageWidth = "600";
-    string ogImageHeight = "315";
+    //Share Image and ShareImage folder
+    string shareImage = "BD-Logo-Master-Black-600x315.png";
+    string shareImageFolder = siteURL + "content/linkshares/";
+    string imageWidth = "600";
+    string imageHeight = "315";
 
     // 'Active Link' variables to keep track of the active link
     string active01 = "";
@@ -44,142 +42,119 @@
     switch (ViewBag.Message)
     {
         case "About":
-            {
-                ogTitle = siteNameShort;
-                PageTitle = siteNameShort;
-                ogURL = siteURL + "/";
-                ogImageWidth = "600";
-                ogImageHeight = "315";
-                canonical = ogURL;
+            {               
+                pageTitle = siteNameShort;
+                folder = "";                              
                 active01 = "active";
                 break;
             }
         case "Home":
             {
-                ogTitle = siteNameShort;
-                PageTitle = siteNameShort;
-                ogURL = siteURL + "/";
-                ogImageWidth = "600";
-                ogImageHeight = "315";
-                canonical = ogURL;
+                pageTitle = siteNameShort;
+                folder = "";
                 active01 = "active";
                 break;
             }
-
         case "Contact":
             {
-                ogURL = siteURL + "Info/Contact";
-                ogDescription = "Contact Us";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Info/Contact";
+                description = "Contact Us";               
                 active02 = "active";
                 break;
             }
-
         case "Calendar":
             {
-                ogURL = siteURL + "Info/Calendar";
-                ogDescription = "Our Calendar";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Info/Calendar";
+                description = "Our Calendar";             
                 active03 = "active";
                 break;
             }
         case "Fundraise":
             {
-                ogURL = siteURL + "Info/Fundraise";
-                ogDescription = "Fundraising";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Info/Fundraise";
+                description = "Fundraising";                
                 active13 = "active";
                 break;
             }
         case "Gallery":
             {
-                ogURL = siteURL + "Gallery/Gallery";
-                ogDescription = "Our Gallery";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Gallery/Gallery";
+                description = "Our Gallery";               
                 active04 = "active";
                 break;
             }
-
         case "Privacy":
             {
-                ogURL = siteURL + "Info/Privacy";
-                ogDescription = "Privacy Policy";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Info/Privacy";
+                description = "Privacy Policy";
                 active05 = "active";
                 break;
             }
-
         case "TOS":
             {
-                ogURL = siteURL + "Info/TOS";
-                ogDescription = "Terms of Service";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Terms of Service";
+                shareImage =  "BD-Logo-Master-Black-600x315.png";
+
                 active06 = "active";
                 break;
             }
         case "Bilaws":
             {
-                ogURL = siteURL + "Info/Bilaws";
-                ogDescription = "Bilaws";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Info/Bilaws";
+                description = "Bilaws";
                 active07 = "active";
                 break;
             }
         case "Store":
             {
-                ogURL = siteURL + "Merchandise/Store";
-                ogDescription = "Merchandise Stores";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Merchandise/Store";
+                description = "Merchandise Stores";            
                 active09 = "active";
                 break;
             }
         case "Minutes":
             {
-                ogURL = siteURL + "Info/Minutes";
-                ogDescription = "Meeting Minutes";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Info/Minutes";
+                description = "Meeting Minutes";              
                 active11 = "active";
                 break;
             }
         case "ClubInfo":
             {
-                ogURL = siteURL + "Info/ClubInfo";
-                ogDescription = "Club Info";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Club Info";
+                description = "Club Info";
                 active12 = "active";
                 break;
             }
         case "TrackWrestling":
             {
-                ogURL = siteURL + "Info/TrackWrestling";
-                ogDescription = "TrackWrestling Instructions";
-                ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-                canonical = ogURL;
+                pageTitle = ViewBag.Message + " - " + siteNameShort;
+                folder = "Info/TrackWrestling";
+                description = "TrackWrestling Instructions";
                 active07 = "active";
                 break;
-            }
-
-            //case "Flier":
-            //    {
-            //        ogURL = siteURL + "Info/Flier";
-            //        ogDescription = "Bulldogs Flier";
-            //        ogImage = linkShareFolder + "BD-Logo-Master-Black-600x315.png";
-            //        canonical = ogURL;
-            //        active10 = "active";
-            //        break;
-            //    }           
-
+            }    
     }
+
+    // Page Share Settings -- (shows on "PageShare" card when a link is shared)
+    string ogSite_Name = siteOrganization;
+    string ogTitle = pageTitle;
+    string ogDescription = description;
+    string ogURL = siteURL + folder;
+    string ogImage = shareImageFolder + shareImage;
+    string ogImageWidth = imageWidth;
+    string ogImageHeight = imageHeight;
+    string canonical = ogURL;
 }
 
 <!DOCTYPE html>
@@ -187,11 +162,15 @@
 <head>
 
     <!-- Site Name -->
-    <title>@PageTitle</title>
+    <title>@pageTitle</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="@ogDescription" />
+    <link rel="canonical" href="@canonical" />
 
     <!-- FavIcon(s) - (all your Logo... plenty of them!) -->
     <link rel="apple-touch-icon" sizes="180x180" href="~/content/icons/apple-touch-icon.png" />
@@ -210,7 +189,6 @@
     <!-- Link Share Setup -->
     <!-- This info is used for the card shown when you share a link on the web (I call it "Link Share"). -->
     <!-- (more info here: https://ogp.me/) -->
-
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="@ogTitle" />
@@ -226,35 +204,27 @@
 
     <!-- Twitter Link Share Setup -->
     <!-- (more info here: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup) -->
-
     <meta name="twitter:card" content="photo" />
     <meta name="twitter:title" content="@ogTitle" />
     <meta name="twitter:image" content="@ogImage" />
     <meta name="twitter:image:width" content=@ogImageWidth />
-    <meta name="twitter:image:height" content=@ogImageHeight />
+    <meta name="twitter:image:height" content=@ogImageHeight /> 
 
-    <!-- Website Setup -->
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="@ogDescription" />
-
-    <link rel="canonical" href="@canonical" />
-
+    <!-- CSS Link Setup -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/colors2.css?v01" />
+    <link rel="stylesheet" href="~/css/fontsize2.css?v01" />
+    <link rel="stylesheet" href="~/css/mycards2.css?v01" />
+    <link rel="stylesheet" href="~/css/site2.css?v01" />
+    <link rel="stylesheet" href="~/css/sizes2.css?v01" />
+    <link rel="stylesheet" href="~/css/spacing2.css?v01" />
 
-    <link rel="stylesheet" href="~/css/colors.css?v01" />
-    <link rel="stylesheet" href="~/css/fontsize.css?v01" />
-    <link rel="stylesheet" href="~/css/mycards.css?v01" />
-    <link rel="stylesheet" href="~/css/site.css?v01" />
-    <link rel="stylesheet" href="~/css/sizes.css?v01" />
-    <link rel="stylesheet" href="~/css/spacing.css?v01" />
-
+    <!-- JS Link Setup -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js"></script>
-</head>
 
+</head>
 <body>
 
     <!-- Top Header Navbar Menu -->
@@ -279,26 +249,41 @@
 
             <!-- Selection Choices -->
             <div class="collapse navbar-collapse flex-grow-1 text-right px-2" id="navbarToggler">
+
                 <ul class=" ps-4 navbar-nav ms-auto flex-nowrap">
+
+                    <!-- Home -->                    
                     <li class="nav-item">
-                        <a class="@active01 nav-link nav-link-font-size" aria-current="page" href="/">About</a>
+                        <a class="@active01 nav-link nav-link-fs" href="/"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/buttons/home.svg" />Home</a>
                     </li>
+
+                    <!-- Contact -->
                     <li class="nav-item">
-                        <a class="@active02 nav-link nav-link-font-size" href="~/Info/Contact">Contact</a>
+                        <a class="@active02 nav-link nav-link-fs" href="~/Info/Contact"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/Cards/Email-White.svg" />Contact</a>
                     </li>
+
+                    <!-- Calendar -->
                     <li class="nav-item">
-                        <a class="@active03 nav-link nav-link-font-size" href="~/Info/Calendar">Calendar</a>
-                    </li>
+                        <a class="@active03 nav-link nav-link-fs" href="~/Info/Calendar"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/cards/Calendar-White.svg" />Calendar</a>
+                    </li>  
+                    
+                    <!-- Fundrraising -->
                     <li class="nav-item">
-                        <a class="@active13 nav-link nav-link-font-size" href="~/Info/Fundraise">Fundraising</a>
+                        <a class="@active13 nav-link nav-link-fs" href="~/Info/Fundraise"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/cards/fundraising-white.svg" />Fundraising</a>
                     </li>
+
+                    <!-- Merchandise -->
                     <li class="nav-item">
-                        <a class="@active09 nav-link nav-link-font-size" href="~/Merchandise/Store">Merchandise</a>
+                        <a class="@active09 nav-link nav-link-fs" href="~/Merchandise/Store"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/cards/merchandise-white.svg" />Merchandise</a>
                     </li>
+
+                    <!-- Gallery -->
                     <li class="nav-item">
-                        <a class="@active04 nav-link nav-link-font-size" href="~/Gallery/Gallery">Gallery</a>
+                        <a class="@active04 nav-link nav-link-fs" href="~/Gallery/Gallery"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/cards/pictures-white.svg" />Gallery</a>
                     </li>
+
                 </ul>
+
             </div>
         </nav>
     </header>

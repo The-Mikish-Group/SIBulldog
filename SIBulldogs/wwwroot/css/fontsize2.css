@@ -8,25 +8,19 @@ footer {
     font-size: 12px;
     width: 100%;
 }
+
 .nav-link-fs {
     font-size: 24px;    
 }
+
 .who-are-we-fs {
-    font-size: 18px;
-}
-.our-congregation-fs {
-    line-height: 1.3;
-    font-size: 15px;
-}
-.we-invite-you-fs {
     font-size: 16px;
 }
+
 .card-body-text-fs {
-    font-size: 11px;
+    font-size: 16px;
 }
-.hours-text-fs {
-    font-size: 12px;
-}
+
 .link-fs {
     font-size: 16px;
 }
@@ -36,30 +30,25 @@ footer {
 @media (min-width: 575px) and (max-width: 768px) {
         
     .who-are-we-fs {
-        font-size: 36px;
-    }
-    .our-congregation-fs {
-        line-height: 1.3;
-        font-size: 21px;
-    }
-    .we-invite-you-fs {
         font-size: 28px;
     }
+   
     .nav-link-fs {
         font-size: 18px;
     }
+
     .nav-text-fs {
         font-size: 24px;
     }
+
     .footer-fs {
         font-size: 14px;
     }
+
     .card-body-text-fs {
         font-size: 16px;        
     }
-    .hours-text-fs {
-        font-size: 16px;
-    }
+    
     .link-fs {
         font-size: 20px;
     }          
@@ -72,32 +61,28 @@ footer {
     .footer-fs {
         font-size: 22px;
     }
+
     .who-are-we-fs {
-        font-size: 36px;
-    }
-    .our-congregation-fs {
-        line-height: 1.3;
-        font-size: 21px;
-    }
-    .we-invite-you-fs {
         font-size: 28px;
-    }    
+    }
+        
     .nav-link-fs {
         font-size: 24px;
     }
+
     .nav-text-fs {
         font-size: 24px;
     }
+
     .navbar-text-footer-fs {
         font-size: 24px;
     }
+
     .card-body-text-fs {
         font-size: 16px;
        /* min-height: 62px;*/
     }
-    .hours-text-fs {
-        font-size: 16px;
-    }  
+    
     .link-fs {
         font-size: 16px;
     }   
@@ -110,37 +95,34 @@ footer {
    .footer-fs {
         font-size: 18px;
     }
+
     .who-are-we-fs {
-        font-size: 36px;
+        font-size: 14px;
     }
-    .our-congregation-fs {
-        line-height: 1.3;
-        font-size: 21px;
-    }
-    .we-invite-you-fs {
-        font-size: 28px;
-    }    
+    
     .nav-text-fs {
         font-size: 24px;
     }
     .navbar-text-footer-fs {
         font-size: 24px;
     }
+
     .nav-link-fs {
         font-size: 20px;
     }
+
     .nav-link-footer-fs {
         font-size: 20px;
     }
+
     .nav-link-footer-fs {
         font-size: 20px;
     }  
+
     .card-body-text-fs {
         font-size: 13px;
     }
-    .hours-text-fs {
-        font-size: 12px;
-    }
+    
     .link-fs {
         font-size: 20px;
     }
@@ -149,22 +131,27 @@ footer {
 
 /* #region (BS -lx- ) (min-width: 1200px) Medium Desktop*/
 @media (min-width: 1200px) {
+
+    .who-are-we-fs {
+        font-size: 14px;
+    }
+
     .card-body-text-fs {
         font-size: 16px;
-    }
-    .hours-text-fs {
-        font-size: 14px;
     }
 }
 /* #endregion */
 
 /* #region (BS - xlg- ) (min-width: 1399.98px) Large Desktop */
 @media (min-width: 1399.98px) {
+
+    .who-are-we-fs {
+        font-size: 14px;
+    }
+
     .card-body-text-fs {
         font-size: 18px;
     }
-    .hours-text-fs {
-        font-size: 16px;
-    }   
+    
 }
 /* #endregion */

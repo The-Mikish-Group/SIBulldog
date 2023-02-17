@@ -1,0 +1,180 @@
+/* Responsive Extra Spacing */
+
+/* #region Extra bottom spacing */
+.about-view-bottom-spacing,
+.calendar-view-bottom-spacing,
+.picture02-view-bottom-spacing,
+.picture03-view-bottom-spacing {
+    min-height: 0;
+}
+.contact-view-bottom-spacing {
+    min-height: 0;
+}
+.gallery-view-bottom-spacing {
+    min-height: 0;
+}
+.store-view-bottom-spacing {
+    min-height: 60px;
+}
+.fundraise-view-bottom-spacing {
+    min-height: 0;
+}
+.links-view-bottom-spacing {
+    min-height: 0;
+}
+.picture01-view-bottom-spacing {
+    min-height: 180px;
+}
+/* #endregion */
+
+/* #region (BS -sm- ) (min-width: 575px) and (max-width: 768px) Small tablet styles */
+@media (min-width: 575px) and (max-width: 768px) {
+ 
+    /* Extra Spacing */
+    .about-view-bottom-spacing {
+        min-height: 0;
+    }
+    .contact-view-bottom-spacing {
+        min-height: 0;
+    }
+    .store-view-bottom-spacing {
+        min-height: 413px;
+    }
+    .calendar-view-bottom-spacing {
+        min-height: 159px;
+    }
+    .gallery-view-bottom-spacing {
+        min-height: 972px;
+    }
+    .picture01-view-bottom-spacing {
+        min-height: 752px;
+    }
+    .picture02-view-bottom-spacing {
+        min-height: 340px;
+    }
+    .picture03-view-bottom-spacing {
+        min-height: 156px;
+    }    
+    .fundraise-view-bottom-spacing {
+        min-height: 190px;
+    }
+    .links-view-bottom-spacing {
+        min-height: 298px;
+    }
+}
+/* #endregion */
+
+/* #region (BS -md- ) (min-width: 768.01px) and (max-width: 991px) Large tablet styles */
+@media (min-width: 768.01px) and (max-width: 991px) {  
+
+    .about-view-bottom-spacing {
+        min-height: 0;
+    }
+    .contact-view-bottom-spacing {
+        min-height: 0;
+    }
+    .store-view-bottom-spacing {
+        min-height: 414px;
+    }
+    .calendar-view-bottom-spacing {
+        min-height: 158px;
+    }
+    .gallery-view-bottom-spacing {
+        min-height: 144px;
+    }
+    .picture01-view-bottom-spacing {
+        min-height: 752px;
+    }
+    .picture02-view-bottom-spacing {
+        min-height: 340px;
+    }
+    .picture03-view-bottom-spacing {
+        min-height: 156px;
+    }    
+    .fundraise-view-bottom-spacing {
+        min-height: 190px;
+    }
+    .links-view-bottom-spacing {
+        min-height: 254px;
+    }
+}
+/* #endregion */
+
+/* #region (BS -lg- ) (min-width: 992px) Start of Desktop */
+@media (min-width: 992px) {
+
+    .about-view-bottom-spacing {
+        min-height: 0;
+    }
+
+    .contact-view-bottom-spacing {
+        min-height: 424px;
+    }
+
+    .calendar-view-bottom-spacing {
+        min-height: 190px;
+    }
+
+    .gallery-view-bottom-spacing {
+        min-height: 0;
+    }
+
+    .picture01-view-bottom-spacing {
+        min-height: 752px;
+    }
+
+    .picture02-view-bottom-spacing {
+        min-height: 340px;
+    }
+
+    .picture03-view-bottom-spacing {
+        min-height: 156px;
+    }
+
+   .store-view-bottom-spacing {
+        min-height: 650px;
+    }
+
+    .fundraise-view-bottom-spacing {
+        min-height: 168px;
+    }
+
+    .links-view-bottom-spacing {
+        min-height: 324px;
+    }  
+}
+/* #endregion */
+
+/* #region (BS -xlg- ) (min-width: 1200px) Medium Desktop */
+@media (min-width: 1200px) {
+
+    .contact-view-bottom-spacing {
+        min-height: 424px;
+    }
+
+    .store-view-bottom-spacing {
+        min-height: 560px;
+    }
+
+    .fundraise-view-bottom-spacing {
+        min-height: 165px;
+    }  
+}
+/* #endregion */
+
+/* #region (BS -xlg- ) (min-width: 1399.98px) Large Desktop */
+@media (min-width: 1399.98px) {
+
+    .contact-view-bottom-spacing {
+        min-height: 424px;
+    }
+
+    .store-view-bottom-spacing {
+        min-height: 453px;
+    }
+
+    .fundraise-view-bottom-spacing {
+        min-height: 166px;
+    }
+}
+/* #endregion */
