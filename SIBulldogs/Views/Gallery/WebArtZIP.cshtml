@@ -91,11 +91,36 @@
         </div>
 
         @{
+            filename = "BD-Shirt-Paw-Front-Black-Master";
+            fileImage = filename + ".svg";
+            bgColor = "bg-blue-lighter";
+            textColor = "text-black";
+        }
+        <div class="col-12 col-lg-4 py-1">
+            <a class="nav-link @bgColor text-center @textColor mx-auto py-2 rounded" onclick="downloadFile('@filename')" style="width: 280px;" href="#">
+                <img class="ratio gallery-picture-size" src="@downloadFolderLocation@fileImage" /><h6>Download<br />@filename@extension</h6>
+            </a>
+        </div>
+
+        @{
+            filename = "BD-Shirt-Paw-Back-Black-Master";
+            fileImage = filename + ".svg";
+            bgColor = "bg-blue-lighter";
+            textColor = "text-black";
+        }
+        <div class="col-12 col-lg-4 py-1">
+            <a class="nav-link @bgColor text-center @textColor mx-auto py-2 rounded" onclick="downloadFile('@filename')" style="width: 280px;" href="#">
+                <img class="ratio gallery-picture-size" src="@downloadFolderLocation@fileImage" /><h6>Download<br />@filename@extension</h6>
+            </a>
+        </div>
+
+        @{
             filename = "BD-Shirt-Paw-Front-Dark-Master-1";
             fileImage = filename + ".svg";
             bgColor = "bg-black";
             textColor = "text-white";
         }
+
         <div class="col-12 col-lg-4 py-1">
             <a class="nav-link @bgColor text-center @textColor mx-auto py-2 rounded" onclick="downloadFile('@filename')" style="width: 280px;" href="#">
                 <img class="ratio gallery-picture-size" src="@downloadFolderLocation@fileImage" /><h6>Download<br />@filename@extension</h6>
