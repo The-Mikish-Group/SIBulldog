@@ -92,8 +92,4 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\content\Gallery\Flyers\" />
-  </ItemGroup>
-
 </Project>

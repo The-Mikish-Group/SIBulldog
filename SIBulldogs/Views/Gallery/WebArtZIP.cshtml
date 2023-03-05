@@ -24,7 +24,7 @@
                 <span class="text-black">WebArt:</span><span class="text-light fs-4"> Zip</span>
             </h3>
             <p class="text-center text-light">Zip files of Masters.</p>
-            <p class="text-center text-light">.AI, .PDF, .EPS, .SVG, JPG, and .PNG formats.</p>
+            <p class="text-center text-light">.AI, .SVG, and .PNG formats.</p>
             <p class="text-center text-light fw-bold">(Click to Download)</p>
         </div>
     </div>
@@ -65,6 +65,29 @@
  
     <!-- Image List Row -->
     <div class="row gx-1 gx-lg-1" id="imagelist">
+        @{
+            filename = "BD-Shirt-Paw-Front-IKWF-State-Master";
+            fileImage = filename + ".svg";
+            bgColor = "bg-gray-lighter";
+            textColor = "text-black";
+        }
+        <div class="col-12 col-lg-4 py-1">
+            <a class="nav-link @bgColor text-center @textColor mx-auto py-2 rounded" onclick="downloadFile('@filename')" style="width: 280px;" href="#">
+                <img class="ratio gallery-picture-size" src="@downloadFolderLocation@fileImage" /><h6>Download<br />@filename@extension</h6>
+            </a>
+        </div>
+
+        @{
+            filename = "BD-Shirt-Paw-Back-IKWF-State-Master";
+            fileImage = filename + ".svg";
+            bgColor = "bg-gray-lighter";
+            textColor = "text-black";
+        }
+        <div class="col-12 col-lg-4 py-1">
+            <a class="nav-link @bgColor text-center @textColor mx-auto py-2 rounded" onclick="downloadFile('@filename')" style="width: 280px;" href="#">
+                <img class="ratio gallery-picture-size" src="@downloadFolderLocation@fileImage" /><h6>Download<br />@filename@extension</h6>
+            </a>
+        </div>
 
         @{
             filename = "BD-Shirt-Paw-Front-Girls-State-Master";
