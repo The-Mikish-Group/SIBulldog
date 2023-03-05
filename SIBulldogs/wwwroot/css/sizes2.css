@@ -4,14 +4,14 @@
 .my-clubinfo-size,
 .my-minutes-size,
 .my-bilaws-size,
-.my-flier-size,
+.my-flyer-size,
 .my-doc-size {
     max-width: 800px;
     height: 840px;
 }
 
-/* About Page Flier Size */
-.my-flier-size-about {
+/* About Page Flyer Size */
+.my-flyer-size-about {
     max-width: 800px;
     height: 1052px;
 }

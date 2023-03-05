@@ -59,9 +59,9 @@ public class InfoController : Controller   {
         ViewBag.Message = "Minutes";
         return View();
     }
-     public IActionResult Flier()
+     public IActionResult Flyer()
     {
-        ViewBag.Message = "Flier";
+        ViewBag.Message = "Flyer";
         return View();
     }
     public IActionResult TrackWrestling()
