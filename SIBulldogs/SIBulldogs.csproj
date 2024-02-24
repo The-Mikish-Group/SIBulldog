@@ -1,46 +1,54 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
 	  <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Gallery\**" />
     <Compile Remove="Views\Home\**" />
+    <Compile Remove="wwwroot\content\Gallery\About\**" />
+    <Compile Remove="wwwroot\content\Gallery\Flyers\**" />
+    <Compile Remove="wwwroot\content\Gallery\Pictures\**" />
     <Compile Remove="wwwroot\content\Gallery\Videos\**" />
+    <Compile Remove="wwwroot\content\Gallery\WebArt\**" />
     <Compile Remove="wwwroot\content\Logos\Shirts\**" />
+    <Content Remove="Views\Gallery\**" />
     <Content Remove="Views\Home\**" />
+    <Content Remove="wwwroot\content\Gallery\About\**" />
+    <Content Remove="wwwroot\content\Gallery\Flyers\**" />
+    <Content Remove="wwwroot\content\Gallery\Pictures\**" />
     <Content Remove="wwwroot\content\Gallery\Videos\**" />
+    <Content Remove="wwwroot\content\Gallery\WebArt\**" />
     <Content Remove="wwwroot\content\Logos\Shirts\**" />
+    <EmbeddedResource Remove="Views\Gallery\**" />
     <EmbeddedResource Remove="Views\Home\**" />
+    <EmbeddedResource Remove="wwwroot\content\Gallery\About\**" />
+    <EmbeddedResource Remove="wwwroot\content\Gallery\Flyers\**" />
+    <EmbeddedResource Remove="wwwroot\content\Gallery\Pictures\**" />
     <EmbeddedResource Remove="wwwroot\content\Gallery\Videos\**" />
+    <EmbeddedResource Remove="wwwroot\content\Gallery\WebArt\**" />
     <EmbeddedResource Remove="wwwroot\content\Logos\Shirts\**" />
+    <None Remove="Views\Gallery\**" />
     <None Remove="Views\Home\**" />
+    <None Remove="wwwroot\content\Gallery\About\**" />
+    <None Remove="wwwroot\content\Gallery\Flyers\**" />
+    <None Remove="wwwroot\content\Gallery\Pictures\**" />
     <None Remove="wwwroot\content\Gallery\Videos\**" />
+    <None Remove="wwwroot\content\Gallery\WebArt\**" />
     <None Remove="wwwroot\content\Logos\Shirts\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\GalleryController.cs" />
     <Compile Remove="Controllers\HomeController.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Gallery\Videos01.cshtml" />
-    <Content Remove="Views\Gallery\Videos02.cshtml" />
-    <Content Remove="Views\Gallery\Videos03.cshtml" />
     <Content Remove="Views\Info\About.cshtml" />
-    <Content Remove="wwwroot\content\Gallery\Flyers\BrawlOld.jpg" />
-    <Content Remove="wwwroot\content\Gallery\Flyers\Camp.jpg" />
-    <Content Remove="wwwroot\content\Gallery\Flyers\GolfFlier.ai" />
-    <Content Remove="wwwroot\content\Gallery\Flyers\GolfFlyer-ORG.jpg" />
-    <Content Remove="wwwroot\content\Gallery\Flyers\GolfFlyer.ai" />
-    <Content Remove="wwwroot\content\Gallery\Flyers\GolfFlyer.jpg" />
-    <Content Remove="wwwroot\content\Gallery\WebArt\BD-Paw-Shirt-Back-Dark-Master.ai" />
-    <Content Remove="wwwroot\content\Gallery\WebArt\BD-Shirt-Paw-Front-Black-Master.ai" />
-    <Content Remove="wwwroot\content\Gallery\WebArt\BD-Shirt-Paw-Front-Dark-Master.ai" />
-    <Content Remove="wwwroot\content\Gallery\WebArt\BD-Shirt-Paw-Front-Light-Master.ai" />
     <Content Remove="wwwroot\content\Logos\Flyer-01\Qualifiers-01.jpg" />
     <Content Remove="wwwroot\content\Logos\Flyer-01\TeamFlyer-01.png" />
     <Content Remove="wwwroot\content\Logos\Flyer-01\TeamFlyer-01.svg" />
