@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
 	  <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -10,36 +10,12 @@
   <ItemGroup>
     <Compile Remove="Views\Gallery\**" />
     <Compile Remove="Views\Home\**" />
-    <Compile Remove="wwwroot\content\Gallery\About\**" />
-    <Compile Remove="wwwroot\content\Gallery\Flyers\**" />
-    <Compile Remove="wwwroot\content\Gallery\Pictures\**" />
-    <Compile Remove="wwwroot\content\Gallery\Videos\**" />
-    <Compile Remove="wwwroot\content\Gallery\WebArt\**" />
-    <Compile Remove="wwwroot\content\Logos\Shirts\**" />
     <Content Remove="Views\Gallery\**" />
     <Content Remove="Views\Home\**" />
-    <Content Remove="wwwroot\content\Gallery\About\**" />
-    <Content Remove="wwwroot\content\Gallery\Flyers\**" />
-    <Content Remove="wwwroot\content\Gallery\Pictures\**" />
-    <Content Remove="wwwroot\content\Gallery\Videos\**" />
-    <Content Remove="wwwroot\content\Gallery\WebArt\**" />
-    <Content Remove="wwwroot\content\Logos\Shirts\**" />
     <EmbeddedResource Remove="Views\Gallery\**" />
     <EmbeddedResource Remove="Views\Home\**" />
-    <EmbeddedResource Remove="wwwroot\content\Gallery\About\**" />
-    <EmbeddedResource Remove="wwwroot\content\Gallery\Flyers\**" />
-    <EmbeddedResource Remove="wwwroot\content\Gallery\Pictures\**" />
-    <EmbeddedResource Remove="wwwroot\content\Gallery\Videos\**" />
-    <EmbeddedResource Remove="wwwroot\content\Gallery\WebArt\**" />
-    <EmbeddedResource Remove="wwwroot\content\Logos\Shirts\**" />
     <None Remove="Views\Gallery\**" />
     <None Remove="Views\Home\**" />
-    <None Remove="wwwroot\content\Gallery\About\**" />
-    <None Remove="wwwroot\content\Gallery\Flyers\**" />
-    <None Remove="wwwroot\content\Gallery\Pictures\**" />
-    <None Remove="wwwroot\content\Gallery\Videos\**" />
-    <None Remove="wwwroot\content\Gallery\WebArt\**" />
-    <None Remove="wwwroot\content\Logos\Shirts\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,12 +25,6 @@
 
   <ItemGroup>
     <Content Remove="Views\Info\About.cshtml" />
-    <Content Remove="wwwroot\content\Logos\Flyer-01\Qualifiers-01.jpg" />
-    <Content Remove="wwwroot\content\Logos\Flyer-01\TeamFlyer-01.png" />
-    <Content Remove="wwwroot\content\Logos\Flyer-01\TeamFlyer-01.svg" />
-    <Content Remove="wwwroot\content\Logos\Flyer-01\TeamImage-01.png" />
-    <Content Remove="wwwroot\content\Logos\Flyer-01\TeamImage-Rudis.ai" />
-    <Content Remove="wwwroot\content\Logos\Flyer-01\TeamImage.png" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x630.ai" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x630.png" />
     <Content Remove="wwwroot\content\Svg\BD-Banner-Logos\BD-Logo-Master-Black-1200x936.ai" />

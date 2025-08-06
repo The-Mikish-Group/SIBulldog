@@ -2,9 +2,6 @@
     // This Site
     string siteURL ="https://SouthernIllinoisBulldogs.com/";
 
-    // Set Site Name
-    string siteName = "Southern Illinois Bulldogs";
-
     // Short name appears in Nav Bar at top on Phones... Can be longer like "Avon Park Nazarene" or "Avon Park Naz"
     string siteNameShort = "Bulldogs Wrestling";
 
@@ -20,131 +17,7 @@
     string shareImage = "BD-Logo-Master-Black-600x315.png";
     string shareImageFolder = siteURL + "content/linkshares/";
     string imageWidth = "600";
-    string imageHeight = "315";
-
-    // 'Active Link' variables to keep track of the active link
-    string active01 = "";
-    string active02 = "";
-    string active03 = "";
-    string active04 = "";
-    string active05 = "";
-    string active06 = "";
-    string active07 = "";
-    //string active08 = "";
-    string active09 = "";
-    //string active10 = "";
-    string active11 = "";
-    string active12 = "";
-    string active13 = "";
-    //string active14 = "";
-
-    // Change Link Share card information based on the View link shared
-    switch (ViewBag.Message)
-    {
-        case "About":
-            {               
-                pageTitle = siteNameShort;
-                folder = "";                              
-                active01 = "active";
-                break;
-            }
-        case "Home":
-            {
-                pageTitle = siteNameShort;
-                folder = "";
-                active01 = "active";
-                break;
-            }
-        case "Contact":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Info/Contact";
-                description = "Contact Us";               
-                active02 = "active";
-                break;
-            }
-        case "Calendar":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Info/Calendar";
-                description = "Our Calendar";             
-                active03 = "active";
-                break;
-            }
-        case "Fundraise":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Info/Fundraise";
-                description = "Fundraising";                
-                active13 = "active";
-                break;
-            }
-        case "Gallery":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Gallery/Gallery";
-                description = "Our Gallery";               
-                active04 = "active";
-                break;
-            }
-        case "Privacy":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Info/Privacy";
-                description = "Privacy Policy";
-                active05 = "active";
-                break;
-            }
-        case "TOS":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Terms of Service";
-                shareImage =  "BD-Logo-Master-Black-600x315.png";
-
-                active06 = "active";
-                break;
-            }
-        case "Bilaws":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Info/Bilaws";
-                description = "Bilaws";
-                active07 = "active";
-                break;
-            }
-        case "Store":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Merchandise/Store";
-                description = "Merchandise Stores";            
-                active09 = "active";
-                break;
-            }
-        case "Minutes":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Info/Minutes";
-                description = "Meeting Minutes";              
-                active11 = "active";
-                break;
-            }
-        case "ClubInfo":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Club Info";
-                description = "Club Info";
-                active12 = "active";
-                break;
-            }
-        case "TrackWrestling":
-            {
-                pageTitle = ViewBag.Message + " - " + siteNameShort;
-                folder = "Info/TrackWrestling";
-                description = "TrackWrestling Instructions";
-                active07 = "active";
-                break;
-            }    
-    }
+    string imageHeight = "315";   
 
     // Page Share Settings -- (shows on "PageShare" card when a link is shared)
     string ogSite_Name = siteOrganization;
@@ -227,147 +100,15 @@
 </head>
 <body>
 
-    <!-- Top Header Navbar Menu -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom box-shadow px-0 mb-0 mb-lg-4 my-0">
-            <div class="d-flex flex-grow-1">
-
-                <!-- Set to show on lg -->
-                <a class="navbar-brand navbar-text text-white d-none d-lg-inline-block" href="~/Info/About"><img class="nav-brand-size px-2 pb-2" src="~/Content/Svg/BD-Heads/BD-Head-Master.svg" alt="Bulldog Head Image Image">@siteName</a>
-
-                <!-- Set to show on sm -->
-                <a class="navbar-brand navbar-text text-white d-lg-none d-inline-block w-100 text-center me-0 ps-5" href="~/Info/About">@siteNameShort<img class="nav-brand-size px-2 pb-2" src="~/Content/Svg/BD-Heads/BD-Head-Master.svg" alt="Bird Image"></a>
-
-                <!-- Toggle Button -->
-                <div class="text-left pe-2 pt-1">
-                    <button class="navbar-toggler pe-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-
-            </div>
-
-            <!-- Selection Choices -->
-            <div class="collapse navbar-collapse flex-grow-1 text-right px-2" id="navbarToggler">
-
-                <ul class=" ps-4 navbar-nav ms-auto flex-nowrap">
-
-                    <!-- Home -->                    
-                    <li class="nav-item">
-                        <a class="@active01 nav-link nav-link-fs" href="/"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/buttons/home.svg" />Home</a>
-                    </li>
-
-                    <!-- Contact -->
-                    <li class="nav-item">
-                        <a class="@active02 nav-link nav-link-fs" href="~/Info/Contact"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/Cards/Email-White.svg" />Contact</a>
-                    </li>
-
-                    <!-- Calendar -->
-                    <li class="nav-item">
-                        <a class="@active03 nav-link nav-link-fs" href="~/Info/Calendar"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/cards/Calendar-White.svg" />Calendar</a>
-                    </li>  
-                    
-                    <!-- Fundrraising -->
-                    <li class="nav-item">
-                        <a class="@active13 nav-link nav-link-fs" href="~/Info/Fundraise"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/cards/fundraising-white.svg" />Fundraising</a>
-                    </li>
-
-                    <!-- Merchandise -->
-                    <li class="nav-item">
-                        <a class="@active09 nav-link nav-link-fs" href="~/Merchandise/Store"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/cards/merchandise-white.svg" />Merchandise</a>
-                    </li>
-
-                    <!-- Gallery -->
-                    @* <li class="nav-item">
-                        <a class="@active04 nav-link nav-link-fs" href="~/Gallery/Gallery"><img class="show-on-phone home-size px-2 pb-2" src="~/content/svg/cards/pictures-white.svg" />Gallery</a>
-                    </li> *@
-
-                </ul>
-
-            </div>
-        </nav>
-    </header>
+    <!-- Top Header -->
+    <header></header>
 
     <!-- Main Content (Views) -->
     <div id="MainContainer" class="container p-0">
         <main role="main" class="p-0">
             @RenderBody()
         </main>
-    </div>
-
-    <!-- Bottom Footer Navbar Menu -->
-    <footer class="navbar navbar-dark border-top bg-black" role="contentinfo" aria-label="Site footer">
-
-        <div class="container text-right">
-
-            <!-- Bottom Footer Row -->
-            <div class="row w-100 gx-0 gx-lg-5">
-
-                <!-- Bottom Footer Column - Info -->
-                <div class="col-4">
-                    <h6 class="navbar-text text-white mb-0">Info</h6>
-                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
-                        <li class="nav-item text-light">
-                            <a class="@active01 nav-link text-nowrap" href="/">About Us</a>
-                        </li>
-                        <li class="nav-item text-light">
-                            <a class="@active02 nav-link text-nowrap" href="~/Info/Contact">Contact Us</a>
-                        </li>
-                        <li class="nav-item text-light">
-                            <a class="@active05 nav-link" style="font-size: 12px;" href="~/Info/Privacy">Privacy Policy</a>
-                        </li>
-                        <li class="nav-item text-light">
-                            <a class="@active06 nav-link" style="font-size: 12px;" href="~/Info/TOS">Terms of Service</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Bottom Footer Column - Features -->
-                <div class="col-4">
-                    <h6 class="navbar-text text-white mb-0">Features</h6>
-                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
-                        <li class="nav-item text-light">
-                            <a class="@active03 nav-link" style="font-size: 12px;" href="~/Info/Calendar" target="_blank">Calendar</a>
-                        </li>
-                        <li class="nav-item text-light">
-                            <a class="@active13 nav-link" style="font-size: 12px;" href="~/Info/Fundraise" target="_blank">Fundraise</a>
-                        </li>
-                        <li class="nav-item text-light">
-                            <a class="@active09 nav-link" style="font-size: 12px;" href="~/Merchandise/Store">Merchandise</a>
-                        </li>
-                        @* <li class="nav-item text-light">
-                            <a class="@active04 nav-link" style="font-size: 12px;" href="~/Gallery/Gallery">Gallery</a>
-                        </li> *@
-                    </ul>
-                </div>
-
-                <!-- Bottom Footer Column - More -->
-                <div class="col-4 pe-0">
-                    <h6 class="navbar-text text-white mb-0">More</h6>
-                    <ul class="navbar-nav ms-auto flex-nowrap ps-2">
-                        <li class="nav-item text-light">
-                            <a class="@active07 nav-link" style="font-size: 12px;" href="~/Info/Bilaws">Bilaws</a>
-                        </li>
-                        <li class="nav-item text-light">
-                            <a class="@active12 nav-link text-nowrap" href="~/Info/ClubInfo">Club Info</a>
-                        </li>
-                        <li class="nav-item text-light">
-                            <a class="@active11 nav-link" style="font-size: 12px;" href="~/Info/Minutes">Club Minutes</a>
-                        </li>
-                        @*<li class="nav-item text-light">
-                            <a class="@active14 nav-link" style="font-size: 12px;" href="~/Info/ClubBanner">Banner Fundraiser</a>
-                        </li>*@
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="w-100 bg-gray text-white">
-            <h6 class="text-center py-2" style="font-size: 10px;">Copyright © @DateTime.Now.Year All Rights Reserved.</h6>
-        </div>
-
-    </footer>
+    </div>       
 
     @await RenderSectionAsync("Scripts", required: false)
 
